@@ -1,0 +1,14 @@
+{
+    "plugins": ["expandable-chapters-small","prism","prism-themes","-highlight"],
+    "pluginsConfig": {
+        "expandable-chapters-small":{},
+		"prism": {
+		    "css": [
+		      "prismjs/themes/prism-tomorrow.css"
+		    ],
+		    "lang": {
+      			"flow": "json"
+    		}
+	    }
+    }
+}
