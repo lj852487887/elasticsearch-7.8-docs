@@ -1,0 +1,2756 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>索引搜索分词 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="stemming.html" />
+    
+    
+    <link rel="prev" href="anatomyOfAnAnalyzer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    什么是Elasticsearch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../chapter1_what_is_elasticsearch/documents-indices.html">
+            
+                <a href="../../chapter1_what_is_elasticsearch/documents-indices.html">
+            
+                    
+                    存入数据：文档与索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../chapter1_what_is_elasticsearch/search-analyze.html">
+            
+                <a href="../../chapter1_what_is_elasticsearch/search-analyze.html">
+            
+                    
+                    取出信息：搜索与分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../chapter1_what_is_elasticsearch/scalability.html">
+            
+                <a href="../../chapter1_what_is_elasticsearch/scalability.html">
+            
+                    
+                    扩展性与弹性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../chapter2_what_is_new/">
+            
+                <a href="../../chapter2_what_is_new/">
+            
+                    
+                    版本的新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../chapter3_getting_started/">
+            
+                <a href="../../chapter3_getting_started/">
+            
+                    
+                    开始使用Elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../chapter4_setup/">
+            
+                <a href="../../chapter4_setup/">
+            
+                    
+                    配置Elasticsearch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../chapter4_setup/installing_elasticsearch/install-elasticsearch.html">
+            
+                <a href="../../chapter4_setup/installing_elasticsearch/install-elasticsearch.html">
+            
+                    
+                    安装Elasticsearch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../chapter4_setup/installing_elasticsearch/docker.html">
+            
+                <a href="../../chapter4_setup/installing_elasticsearch/docker.html">
+            
+                    
+                    使用Docker安装Elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../chapter4_setup/setting.md">
+            
+                <span>
+            
+                    
+                    Configuring Elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../chapter4_setup/important-settings.html">
+            
+                <a href="../../chapter4_setup/important-settings.html">
+            
+                    
+                    重要 Elasticsearch 配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../chapter4_setup/path-settings.html">
+            
+                <a href="../../chapter4_setup/path-settings.html">
+            
+                    
+                    path.data 和 path.logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" >
+            
+                <span>
+            
+                    
+                    cluster.name
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" >
+            
+                <span>
+            
+                    
+                    node.name
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" >
+            
+                <span>
+            
+                    
+                    network.host
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" >
+            
+                <span>
+            
+                    
+                    发现与集群组成设置
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="../../chapter4_setup/heap_size.html">
+            
+                <a href="../../chapter4_setup/heap_size.html">
+            
+                    
+                    堆大小设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.7" >
+            
+                <span>
+            
+                    
+                    JVM 堆 dump 路径
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.8" >
+            
+                <span>
+            
+                    
+                    GC日志
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.9" >
+            
+                <span>
+            
+                    
+                    临时目录
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.10" >
+            
+                <span>
+            
+                    
+                    JVM 严重错误日志
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../chapter4_setup/important_system_configuration/system-config.html">
+            
+                <a href="../../chapter4_setup/important_system_configuration/system-config.html">
+            
+                    
+                    重要系统配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="../../chapter4_setup/important_system_configuration/setup-configuration-memory.html">
+            
+                <a href="../../chapter4_setup/important_system_configuration/setup-configuration-memory.html">
+            
+                    
+                    禁用内存交换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="../../chapter4_setup/important_system_configuration/vm-max-map-count.html">
+            
+                <a href="../../chapter4_setup/important_system_configuration/vm-max-map-count.html">
+            
+                    
+                    虚拟内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="../../chapter4_setup/important_system_configuration/max-number-of-threads.html">
+            
+                <a href="../../chapter4_setup/important_system_configuration/max-number-of-threads.html">
+            
+                    
+                    线程数量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../chapter4_setup/bootstrap-checks.html">
+            
+                <a href="../../chapter4_setup/bootstrap-checks.html">
+            
+                    
+                    引导式检查
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../../chapter4_setup/heap_size_check.html">
+            
+                <a href="../../chapter4_setup/heap_size_check.html">
+            
+                    
+                    堆大小检查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../chapter4_setup/setting.md">
+            
+                <span>
+            
+                    
+                    Bootstrap Checks for X-Pack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../chapter4_setup/setting.md">
+            
+                <span>
+            
+                    
+                    Starting Elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../../chapter4_setup/setting.md">
+            
+                <span>
+            
+                    
+                    Stopping Elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../../chapter4_setup/setting.md">
+            
+                <span>
+            
+                    
+                    Discovery and cluster formation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../../chapter4_setup/add-elasticsearch-nodes.html">
+            
+                <a href="../../chapter4_setup/add-elasticsearch-nodes.html">
+            
+                    
+                    在集群中添加或移除节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../../chapter4_setup/setting.md">
+            
+                <span>
+            
+                    
+                    Full-cluster restart and rolling restart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../../chapter4_setup/setting.md">
+            
+                <span>
+            
+                    
+                    Remote clusters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../../chapter4_setup/setting.md">
+            
+                <span>
+            
+                    
+                    Set up X-Pack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../../chapter4_setup/setting.md">
+            
+                <span>
+            
+                    
+                    Configuring X-Pack Java Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../../chapter4_setup/setting.md">
+            
+                <span>
+            
+                    
+                    Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../chapter5_upgrade/setup-upgrade.html">
+            
+                <a href="../../chapter5_upgrade/setup-upgrade.html">
+            
+                    
+                    升级Elasticsearch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../chapter5_upgrade/rolling-upgrades.html">
+            
+                <a href="../../chapter5_upgrade/rolling-upgrades.html">
+            
+                    
+                    滚动升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../chapter6_index_templates/">
+            
+                <a href="../../chapter6_index_templates/">
+            
+                    
+                    索引模板
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../chapter6_index_templates/simulate-multi-component-templates.html">
+            
+                <a href="../../chapter6_index_templates/simulate-multi-component-templates.html">
+            
+                    
+                    模拟多组件模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../chapter7_search_your_data/">
+            
+                <a href="../../chapter7_search_your_data/">
+            
+                    
+                    搜索数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../chapter7_search_your_data/collapse_search_results.html">
+            
+                <a href="../../chapter7_search_your_data/collapse_search_results.html">
+            
+                    
+                    折叠搜索结果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../chapter7_search_your_data/filter_search_results.html">
+            
+                <a href="../../chapter7_search_your_data/filter_search_results.html">
+            
+                    
+                    筛选搜索结果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../chapter7_search_your_data/highlighting.html">
+            
+                <a href="../../chapter7_search_your_data/highlighting.html">
+            
+                    
+                    高亮显示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../chapter7_search_your_data/async-search-intro.html">
+            
+                <a href="../../chapter7_search_your_data/async-search-intro.html">
+            
+                    
+                    长时间搜索(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../chapter7_search_your_data/near-real-time.html">
+            
+                <a href="../../chapter7_search_your_data/near-real-time.html">
+            
+                    
+                    准即时搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../../chapte7_search_your_data/paginate-search-results.md">
+            
+                <span>
+            
+                    
+                    搜索结果分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../../chapte7_search_your_data/sort-search-results.md">
+            
+                <span>
+            
+                    
+                    搜索结果排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../chapter8_query_dsl/">
+            
+                <a href="../../chapter8_query_dsl/">
+            
+                    
+                    Query DSL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../chapter8_query_dsl/query-filter-context.html">
+            
+                <a href="../../chapter8_query_dsl/query-filter-context.html">
+            
+                    
+                    查询筛选上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../chapter8_query_dsl/compound-queries.html">
+            
+                <a href="../../chapter8_query_dsl/compound-queries.html">
+            
+                    
+                    复合查询
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="../../chapter8_query_dsl/query-dsl-bool-query.html">
+            
+                <a href="../../chapter8_query_dsl/query-dsl-bool-query.html">
+            
+                    
+                    布尔查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="../../chapter8_query_dsl/query-dsl-boosting-query.html">
+            
+                <a href="../../chapter8_query_dsl/query-dsl-boosting-query.html">
+            
+                    
+                    增强查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.3" data-path="../../chapter8_query_dsl/query-dsl-constant-score-query.html">
+            
+                <a href="../../chapter8_query_dsl/query-dsl-constant-score-query.html">
+            
+                    
+                    词干分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.4" data-path="../../chapter8_query_dsl/query-dsl-dis-max-query.html">
+            
+                <a href="../../chapter8_query_dsl/query-dsl-dis-max-query.html">
+            
+                    
+                    标记图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.5" data-path="../../chapter8_query_dsl/query-dsl-function-score-query.html">
+            
+                <a href="../../chapter8_query_dsl/query-dsl-function-score-query.html">
+            
+                    
+                    标记图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../chapter8_query_dsl/full-text-queries/full-text-queries.html">
+            
+                <a href="../../chapter8_query_dsl/full-text-queries/full-text-queries.html">
+            
+                    
+                    全文本查询
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="../../chapter8_query_dsl/full-text-queries/query-dsl-intervals-query.html">
+            
+                <a href="../../chapter8_query_dsl/full-text-queries/query-dsl-intervals-query.html">
+            
+                    
+                    区间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="../../chapter8_query_dsl/full-text-queries/query-dsl-match-query.html">
+            
+                <a href="../../chapter8_query_dsl/full-text-queries/query-dsl-match-query.html">
+            
+                    
+                    匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.3" data-path="../../chapter8_query_dsl/full-text-queries/query-dsl-match-bool-prefix-query.html">
+            
+                <a href="../../chapter8_query_dsl/full-text-queries/query-dsl-match-bool-prefix-query.html">
+            
+                    
+                    匹配布尔前缀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.4" data-path="../../chapter8_query_dsl/full-text-queries/query-dsl-match-query-phrase.html">
+            
+                <a href="../../chapter8_query_dsl/full-text-queries/query-dsl-match-query-phrase.html">
+            
+                    
+                    匹配词组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.5" data-path="../../chapter8_query_dsl/full-text-queries/query-dsl-query-string-query.html">
+            
+                <a href="../../chapter8_query_dsl/full-text-queries/query-dsl-query-string-query.html">
+            
+                    
+                    查询字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.6" data-path="../../chapter8_query_dsl/full-text-queries/query-dsl-simple-query-string-query.html">
+            
+                <a href="../../chapter8_query_dsl/full-text-queries/query-dsl-simple-query-string-query.html">
+            
+                    
+                    简单查询字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../chapter8_query_dsl/geo-queries.html">
+            
+                <a href="../../chapter8_query_dsl/geo-queries.html">
+            
+                    
+                    地理查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../chapter8_query_dsl/shape-queries.md">
+            
+                <span>
+            
+                    
+                    图形查询(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../chapter8_query_dsl/joining-queries.md">
+            
+                <span>
+            
+                    
+                    连接查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../../chapter8_query_dsl/query-dsl-match-all-query.md">
+            
+                <span>
+            
+                    
+                    匹配全部查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../../chapter8_query_dsl/span-queries.md">
+            
+                <span>
+            
+                    
+                    范围查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../../chapter8_query_dsl/specialized-queries.html">
+            
+                <a href="../../chapter8_query_dsl/specialized-queries.html">
+            
+                    
+                    特定查询
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.9.1" data-path="../../chapter8_query_dsl/specialized-queries.html">
+            
+                <a href="../../chapter8_query_dsl/specialized-queries.html">
+            
+                    
+                    Distance feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9.2" data-path="../../chapter8_query_dsl/specialized-queries.html">
+            
+                <a href="../../chapter8_query_dsl/specialized-queries.html">
+            
+                    
+                    More like this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9.3" data-path="../../chapter8_query_dsl/specialized-queries.html">
+            
+                <a href="../../chapter8_query_dsl/specialized-queries.html">
+            
+                    
+                    Percolate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9.4" data-path="../../chapter8_query_dsl/specialized-queries.html">
+            
+                <a href="../../chapter8_query_dsl/specialized-queries.html">
+            
+                    
+                    Rank feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9.5" data-path="../../chapter8_query_dsl/specialized-queries.html">
+            
+                <a href="../../chapter8_query_dsl/specialized-queries.html">
+            
+                    
+                    Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9.6" data-path="../../chapter8_query_dsl/specialized-queries.html">
+            
+                <a href="../../chapter8_query_dsl/specialized-queries.html">
+            
+                    
+                    Script score
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9.7" data-path="../../chapter8_query_dsl/specialized-queries.html">
+            
+                <a href="../../chapter8_query_dsl/specialized-queries.html">
+            
+                    
+                    Wrapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9.8" data-path="../../chapter8_query_dsl/specialized-queries.html">
+            
+                <a href="../../chapter8_query_dsl/specialized-queries.html">
+            
+                    
+                    Pinned Query
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../../chapter8_query_dsl/term-level-queries.md">
+            
+                <span>
+            
+                    
+                    词项级别查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../../chapter8_query_dsl/query-dsl-minimum-should-match.md">
+            
+                <span>
+            
+                    
+                    minimum_should_match参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../../chapter8_query_dsl/query-dsl-multi-term-rewrite.md">
+            
+                <span>
+            
+                    
+                    rewrite参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../../chapter8_query_dsl/regexp-syntax.md">
+            
+                <span>
+            
+                    
+                    正则对称查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../chapter9_SQL_access/README.md">
+            
+                <span>
+            
+                    
+                    SQL 接入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../chapter10_aggregations/">
+            
+                <a href="../../chapter10_aggregations/">
+            
+                    
+                    聚合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../chapter11_scripting/README.md">
+            
+                <span>
+            
+                    
+                    脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../chapter12_mapping/">
+            
+                <a href="../../chapter12_mapping/">
+            
+                    
+                    映射
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../chapter12_mapping/dynamic-mapping.html">
+            
+                <a href="../../chapter12_mapping/dynamic-mapping.html">
+            
+                    
+                    动态映射(Dynamic mapping)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../chapter12_mapping/mapping_parameters/">
+            
+                <a href="../../chapter12_mapping/mapping_parameters/">
+            
+                    
+                    映射参数(Mapping parameter)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.2.1" data-path="../../chapter12_mapping/mapping_parameters/ignore-above.html">
+            
+                <a href="../../chapter12_mapping/mapping_parameters/ignore-above.html">
+            
+                    
+                    ignore_above
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    文本分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../overview.html">
+            
+                <a href="../overview.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../concepts.html">
+            
+                <a href="../concepts.html">
+            
+                    
+                    概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="anatomyOfAnAnalyzer.html">
+            
+                <a href="anatomyOfAnAnalyzer.html">
+            
+                    
+                    分词器详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13.4" data-path="indexAndSearchAnalysis.html">
+            
+                <a href="indexAndSearchAnalysis.html">
+            
+                    
+                    索引搜索分词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="stemming.html">
+            
+                <a href="stemming.html">
+            
+                    
+                    词干分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="tokenGraphs.html">
+            
+                <a href="tokenGraphs.html">
+            
+                    
+                    标记图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../configureTextAnalysis.html">
+            
+                <a href="../configureTextAnalysis.html">
+            
+                    
+                    配置文本分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../configureTextAnalysis/testAnalyzer.html">
+            
+                <a href="../configureTextAnalysis/testAnalyzer.html">
+            
+                    
+                    测试分词器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../configureTextAnalysis/configureBuildInAnalyzer.html">
+            
+                <a href="../configureTextAnalysis/configureBuildInAnalyzer.html">
+            
+                    
+                    配置内置分词器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.10" data-path="../configureTextAnalysis/createCustomAnalyzer.html">
+            
+                <a href="../configureTextAnalysis/createCustomAnalyzer.html">
+            
+                    
+                    创建自定义分词器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.11" data-path="specifyAnalyzer.html">
+            
+                <a href="specifyAnalyzer.html">
+            
+                    
+                    指定分词器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.12" data-path="../build-inAnalyzerReference.html">
+            
+                <a href="../build-inAnalyzerReference.html">
+            
+                    
+                    内置分词器参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.13" data-path="../tokenizerReference.html">
+            
+                <a href="../tokenizerReference.html">
+            
+                    
+                    标记化器参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.14" data-path="../token_filter_reference/analysis-tokenfilters.html">
+            
+                <a href="../token_filter_reference/analysis-tokenfilters.html">
+            
+                    
+                    标记过滤器参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.15" data-path="../characterFilterReference.html">
+            
+                <a href="../characterFilterReference.html">
+            
+                    
+                    字符过滤器参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.16" data-path="../normalizer.html">
+            
+                <a href="../normalizer.html">
+            
+                    
+                    规范化器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../chapter14_index_modules/">
+            
+                <a href="../../chapter14_index_modules/">
+            
+                    
+                    索引模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../chapter15_ingest_node/">
+            
+                <a href="../../chapter15_ingest_node/">
+            
+                    
+                    预处理节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../../chapter15_EQL/README.md">
+            
+                <span>
+            
+                    
+                    数据管理(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../../chapter15_EQL/README.md">
+            
+                <span>
+            
+                    
+                    ILM 管理索引生命周期(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../../chapter15_EQL/README.md">
+            
+                <span>
+            
+                    
+                    自动扩容(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../../chapter15_EQL/README.md">
+            
+                <span>
+            
+                    
+                    监控集群(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../../chapter15_EQL/README.md">
+            
+                <span>
+            
+                    
+                    冻结索引(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../../chapter15_EQL/README.md">
+            
+                <span>
+            
+                    
+                    汇总或转换数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../../chapter15_EQL/README.md">
+            
+                <span>
+            
+                    
+                    配置高可用集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../../chapter15_EQL/README.md">
+            
+                <span>
+            
+                    
+                    快照与恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../../chapter22_secure_a_cluster/">
+            
+                <a href="../../chapter22_secure_a_cluster/">
+            
+                    
+                    集群安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../../chapter22_secure_a_cluster/elasticsearch-security.html">
+            
+                <a href="../../chapter22_secure_a_cluster/elasticsearch-security.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="../../chapter22_secure_a_cluster/elasticsearch-security.html">
+            
+                <a href="../../chapter22_secure_a_cluster/elasticsearch-security.html">
+            
+                    
+                    配置安全特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.3" data-path="../../chapter22_secure_a_cluster/user_authentication/setting-up-authentication.html">
+            
+                <a href="../../chapter22_secure_a_cluster/user_authentication/setting-up-authentication.html">
+            
+                    
+                    用户鉴权
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.3.1" data-path="../../chapter22_secure_a_cluster/user_authentication/built-in-users.html">
+            
+                <a href="../../chapter22_secure_a_cluster/user_authentication/built-in-users.html">
+            
+                    
+                    内置用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.4" data-path="../../chapter22_secure_a_cluster/encrypting_communications/encrypting-communications.html">
+            
+                <a href="../../chapter22_secure_a_cluster/encrypting_communications/encrypting-communications.html">
+            
+                    
+                    加密通信
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.4.1" data-path="../../chapter22_secure_a_cluster/encrypting_communications/ssl-tls.html">
+            
+                <a href="../../chapter22_secure_a_cluster/encrypting_communications/ssl-tls.html">
+            
+                    
+                    在群集上设置TLS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../../chapter23_EQL/README.md">
+            
+                <span>
+            
+                    
+                    监视集群和索引事件(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="../../chapter24_EQL/README.md">
+            
+                <span>
+            
+                    
+                    命令行工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="../../chapter25_how_to/">
+            
+                <a href="../../chapter25_how_to/">
+            
+                    
+                    如何
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.27.1" data-path="../../chapter29_how_to/general-recommendations.md">
+            
+                <span>
+            
+                    
+                    通用建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.2" data-path="../../chapter29_how_to/recipes.md">
+            
+                <span>
+            
+                    
+                    食谱
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.27.2.1" data-path="../../chapter29_how_to/mixing-exact-search-with-stemming.md">
+            
+                <span>
+            
+                    
+                    混合精确搜索和词干分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.2.2" data-path="../../chapter29_how_to/consistent-scoring.md">
+            
+                <span>
+            
+                    
+                    获得一致的分数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.2.3" data-path="../../chapter29_how_to/static-scoring-signals.md">
+            
+                <span>
+            
+                    
+                    将静态相关信号纳入分数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.3" data-path="../../chapter29_how_to/tune_for_search_speed/README.md">
+            
+                <span>
+            
+                    
+                    调整搜索速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="../../chapter26_glossary/">
+            
+                <a href="../../chapter26_glossary/">
+            
+                    
+                    术语表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="../../chapter27_REST-APIs/">
+            
+                <a href="../../chapter27_REST-APIs/">
+            
+                    
+                    REST APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.29.1" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    API conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.2" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Autoscaling APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.3" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    cat APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.4" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Cluster APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.5" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Cross-cluster replication APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.6" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Data stream APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.7" data-path="../../chapter27_REST-APIs/document_apis/docs.html">
+            
+                <a href="../../chapter27_REST-APIs/document_apis/docs.html">
+            
+                    
+                    Document APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.29.7.1" data-path="../../chapter27_REST-APIs/document_apis/docs-replication.html">
+            
+                <a href="../../chapter27_REST-APIs/document_apis/docs-replication.html">
+            
+                    
+                    Reading and Writing documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.7.2" data-path="../../chapter27_REST-APIs/document_apis/docs-index.html">
+            
+                <a href="../../chapter27_REST-APIs/document_apis/docs-index.html">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.7.3" data-path="../../chapter27_REST-APIs/document_apis/docs-delete.html">
+            
+                <a href="../../chapter27_REST-APIs/document_apis/docs-delete.html">
+            
+                    
+                    Delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.7.4" data-path="../../chapter27_REST-APIs/document_apis/docs-update-by-query.html">
+            
+                <a href="../../chapter27_REST-APIs/document_apis/docs-update-by-query.html">
+            
+                    
+                    Update by query
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.7.5" data-path="../../chapter27_REST-APIs/document_apis/docs-reindex.html">
+            
+                <a href="../../chapter27_REST-APIs/document_apis/docs-reindex.html">
+            
+                    
+                    Reindex
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.8" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Enrich APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.9" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Graph explore API(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.10" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Find structure API(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.11" data-path="../../chapter27_REST-APIs/index_apis/indices.html">
+            
+                <a href="../../chapter27_REST-APIs/index_apis/indices.html">
+            
+                    
+                    Index APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.29.11.1" data-path="../../chapter27_REST-APIs/index_apis/indices-put-template.html">
+            
+                <a href="../../chapter27_REST-APIs/index_apis/indices-put-template.html">
+            
+                    
+                    Put index template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.11.2" data-path="../../chapter27_REST-APIs/index_apis/indices-put-mapping.html">
+            
+                <a href="../../chapter27_REST-APIs/index_apis/indices-put-mapping.html">
+            
+                    
+                    Put mapping
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.12" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Index lifecycle management APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.13" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Ingest APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.14" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Info API(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.15" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Licensing APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.16" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Logstash APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.17" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Machine learning anomaly detection APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.18" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Machine learning data frame analytics APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.19" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Migration APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.20" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Reload search analyzers API(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.21" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Repositories metering APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.22" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Rollup APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.23" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Search APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.24" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Searchable snapshots APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.25" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Security APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.26" data-path="../../chapter27_REST-APIs/snapshot-restore-apis.html">
+            
+                <a href="../../chapter27_REST-APIs/snapshot-restore-apis.html">
+            
+                    
+                    Snapshot and restore APIs(中文)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.27" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Snapshot lifecycle management APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.28" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Transform APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.29" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Usage API(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29.30" data-path="../../chapter27_REST-APIs/api.md">
+            
+                <span>
+            
+                    
+                    Watcher APIs(x-pack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="../../chapter15_EQL/README.md">
+            
+                <span>
+            
+                    
+                    版本迁移指导
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="../../chapter15_EQL/README.md">
+            
+                <span>
+            
+                    
+                    发版记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="../../chapter15_EQL/README.md">
+            
+                <span>
+            
+                    
+                    依赖与版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >索引搜索分词</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="822-&#x7D22;&#x5F15;&#x548C;&#x641C;&#x7D22;&#x5206;&#x8BCD;">8.2.2 &#x7D22;&#x5F15;&#x548C;&#x641C;&#x7D22;&#x5206;&#x8BCD;</h1>
+<p>&#x6587;&#x672C;&#x5206;&#x6790;&#x5206;&#x4E24;&#x6B21;&#x8FDB;&#x884C;&#xFF1A;</p>
+<p><strong>&#x7D22;&#x5F15;&#x65F6;&#x95F4;&#x70B9;</strong></p>
+<p>&#x5BF9;&#x6587;&#x6863;&#x8FDB;&#x884C;&#x7D22;&#x5F15;&#x65F6;&#xFF0C;&#x5C06;&#x5206;&#x6790;&#x4EFB;&#x4F55;<code>text</code>&#x5B57;&#x6BB5;&#x503C;&#x3002;</p>
+<p><strong>&#x641C;&#x7D22;&#x65F6;&#x95F4;&#x70B9;</strong></p>
+<p>&#x5728;<code>text</code>&#x5B57;&#x6BB5;&#x4E0A;&#x8FD0;&#x884C;<em>&#x5168;&#x6587;&#x672C;&#x641C;&#x7D22;</em>&#x65F6;&#xFF0C;&#x5C06;&#x5206;&#x6790;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x7528;&#x6237;&#x6B63;&#x5728;&#x641C;&#x7D22;&#x7684;&#x6587;&#x672C;&#xFF09;&#x3002;</p>
+<p>&#x641C;&#x7D22;&#x65F6;&#x95F4;&#x70B9;&#x4E5F;&#x79F0;&#x4E3A;<em>&#x67E5;&#x8BE2;&#x65F6;&#x95F4;&#x70B9;</em>&#x3002;</p>
+<p>&#x6BCF;&#x6B21;&#x4F7F;&#x7528;&#x7684;&#x5206;&#x8BCD;&#x5668;&#x6216;&#x5206;&#x6790;&#x89C4;&#x5219;&#x96C6;&#x5408;&#x4E5F;&#x88AB;&#x79F0;&#x4E3A;<em>&#x7D22;&#x5F15;&#x5206;&#x8BCD;&#x5668;&#x6216;&#x641C;&#x7D22;&#x5206;&#x8BCD;&#x5668;</em>&#x3002;</p>
+<h4 id="8221-&#x7D22;&#x5F15;&#x548C;&#x641C;&#x7D22;&#x5206;&#x8BCD;&#x5668;&#x5982;&#x4F55;&#x534F;&#x540C;&#x5DE5;&#x4F5C;">8.2.2.1 &#x7D22;&#x5F15;&#x548C;&#x641C;&#x7D22;&#x5206;&#x8BCD;&#x5668;&#x5982;&#x4F55;&#x534F;&#x540C;&#x5DE5;&#x4F5C;</h4>
+<p>&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7D22;&#x5F15;&#x548C;&#x641C;&#x7D22;&#x65F6;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x5206;&#x8BCD;&#x5668;&#x3002;&#x8FD9;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x5C06;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x548C;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x66F4;&#x6539;&#x4E3A;&#x76F8;&#x540C;&#x5F62;&#x5F0F;&#x7684;&#x6807;&#x8BB0;&#x3002;&#x53CD;&#x8FC7;&#x6765;&#xFF0C;&#x8FD9;&#x5C06;&#x786E;&#x4FDD;&#x6807;&#x8BB0;&#x5728;&#x641C;&#x7D22;&#x671F;&#x95F4;&#x4E0E;&#x9884;&#x671F;&#x5339;&#x914D;&#x3002;</p>
+<p><strong>&#x4F8B;&#x5B50;</strong></p>
+<p>&#x4F7F;&#x7528;<code>text</code>&#x5B57;&#x6BB5;&#x4E2D;&#x7684;&#x4EE5;&#x4E0B;&#x503C;&#x7D22;&#x5F15;&#x4E3A;&#x6587;&#x6863;</p>
+<pre class="language-"><code>The QUICK brown foxes jumped over the dog!
+</code></pre><p>&#x5B57;&#x6BB5;&#x7684;&#x7D22;&#x5F15;&#x5206;&#x8BCD;&#x5668;&#x5C06;&#x503C;&#x8F6C;&#x6362;&#x4E3A;&#x6807;&#x8BB0;&#x5E76;&#x5C06;&#x5176;&#x89C4;&#x8303;&#x5316;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6BCF;&#x4E2A;&#x6807;&#x8BB0;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#xFF1A;</p>
+<pre class="language-"><code>[ quick, brown, fox, jump, over, dog ]    
+</code></pre><p>&#x7136;&#x540E;&#x8FD9;&#x4E9B;&#x6807;&#x8BB0;&#x88AB;&#x7D22;&#x5F15;&#x3002;</p>
+<p>&#x7A0D;&#x540E;&#xFF0C;&#x7528;&#x6237;&#x5C06;&#x5728;&#x540C;&#x4E00;<code>text</code>&#x5B57;&#x6BB5;&#x4E2D;&#x641C;&#x7D22;&#xFF1A;    </p>
+<pre class="language-"><code>&quot;Quick fox&quot;
+</code></pre><p>&#x7528;&#x6237;&#x5E0C;&#x671B;&#x8FD9;&#x6B21;&#x641C;&#x7D22;&#x80FD;&#x5339;&#x914D;&#x5230;&#x4E4B;&#x524D;&#x7D22;&#x5F15;&#x7684;&#x53E5;&#x5B50;&#xFF0C;<code>The QUICK brown foxes jumped over the dog!</code><br>&#x4F46;&#x662F;&#xFF0C;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x5305;&#x542B;&#x6587;&#x6863;&#x539F;&#x59CB;&#x6587;&#x672C;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x786E;&#x5207;&#x5355;&#x8BCD;&#xFF1A;</p>
+<ul>
+<li><code>quick</code> vs <code>QUICK</code></li>
+<li><code>fox</code> vs <code>foxes</code></li>
+</ul>
+<p>&#x4E3A;&#x6B64;&#xFF0C;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x5206;&#x8BCD;&#x5668;&#x5206;&#x6790;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x6B64;&#x5206;&#x8BCD;&#x5668;&#x751F;&#x6210;&#x4EE5;&#x4E0B;&#x6807;&#x8BB0;&#xFF1A;</p>
+<pre class="language-"><code>[ quick, fox ]
+</code></pre><p>&#x4E3A;&#x4E86;&#x6267;&#x884C;&#x641C;&#x7D22;&#xFF0C;Elasticsearch&#x5C06;&#x8FD9;&#x4E9B;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x6807;&#x8BB0;&#x4E0E;&#x6587;&#x672C;&#x5B57;&#x6BB5;&#x4E2D;&#x7D22;&#x5F15;&#x7684;&#x6807;&#x8BB0;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6807;&#x8BB0;</th>
+<th>&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;</th>
+<th><code>text</code>&#x5B57;&#x6BB5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>qucik</code></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td><code>brown</code></td>
+<td></td>
+<td>x</td>
+</tr>
+<tr>
+<td><code>fox</code></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td><code>jump</code></td>
+<td></td>
+<td>x</td>
+</tr>
+<tr>
+<td><code>over</code></td>
+<td></td>
+<td>x</td>
+</tr>
+<tr>
+<td><code>dog</code></td>
+<td></td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+<p>&#x56E0;&#x4E3A;&#x5B57;&#x6BB5;&#x503C;&#x4E0E;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5206;&#x8BCD;&#x65B9;&#x6CD5;&#x76F8;&#x540C;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x76F8;&#x540C;&#x7684;&#x6807;&#x8BB0;&#x3002;&#x6807;&#x8BB0;<code>quick</code>&#x548C;<code>fox</code>&#x662F;&#x5B8C;&#x5168;&#x5339;&#x914D;&#x7684;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x641C;&#x7D22;&#x4E0E;&#x5305;&#x542B;<code>&quot;The QUICK brown foxes jumped
+over the dog!&quot;</code>&#x7684;&#x6587;&#x6863;&#x5339;&#x914D;&#xFF0C;&#x6B63;&#x5982;&#x7528;&#x6237;&#x6240;&#x671F;&#x671B;&#x7684;&#x90A3;&#x6837;&#x3002;</p>
+<h4 id="8222-&#x4F55;&#x65F6;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x641C;&#x7D22;&#x5206;&#x8BCD;&#x5668;">8.2.2.2 &#x4F55;&#x65F6;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x641C;&#x7D22;&#x5206;&#x8BCD;&#x5668;</h4>
+<p>&#x867D;&#x7136;&#x4E0D;&#x5E38;&#x89C1;&#xFF0C;&#x4F46;&#x6709;&#x65F6;&#x5728;&#x7D22;&#x5F15;&#x548C;&#x641C;&#x7D22;&#x65F6;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x8BCD;&#x5668;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x3002;&#x8981;&#x542F;&#x7528;&#x6B64;&#x529F;&#x80FD;&#xFF0C;Elasticsearch&#x5141;&#x8BB8;&#x60A8;&#x6307;&#x5B9A;&#x5355;&#x72EC;&#x7684;&#x641C;&#x7D22;&#x5206;&#x8BCD;&#x5668;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x5BF9;&#x5B57;&#x6BB5;&#x503C;&#x548C;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x5F62;&#x5F0F;&#x7684;&#x6807;&#x8BB0;&#x4F1A;&#x521B;&#x5EFA;&#x610F;&#x5916;&#x6216;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x641C;&#x7D22;&#x5339;&#x914D;&#x65F6;&#xFF0C;&#x624D;&#x5E94;&#x6307;&#x5B9A;&#x5355;&#x72EC;&#x7684;&#x641C;&#x7D22;&#x5206;&#x8BCD;&#x5668;&#x3002;</p>
+<p><strong>&#x4F8B;&#x5B50;</strong></p>
+<p>Elasticsearch&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x53EA;&#x5339;&#x914D;&#x4EE5;&#x6240;&#x63D0;&#x4F9B;&#x7684;&#x524D;&#x7F00;&#x5F00;&#x5934;&#x7684;&#x5355;&#x8BCD;&#x7684;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x641C;&#x7D22;<code>tr</code>&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;<code>tram</code>&#x6216;<code>trope</code>&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x8FD4;&#x56DE;<code>taxi</code>&#x6216;<code>bat</code>&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x6587;&#x6863;&#x5C06;&#x6DFB;&#x52A0;&#x5230;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x7684;&#x7D22;&#x5F15;&#x4E2D;&#xFF1B;&#x6B64;&#x6587;&#x6863;<code>text</code>&#x5B57;&#x6BB5;&#x4E2D;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x8FD9;&#x6837;&#x7684;&#x5355;&#x8BCD;&#xFF1A;</p>
+<pre class="language-"><code>&quot;Apple&quot;    
+</code></pre><p>&#x5B57;&#x6BB5;&#x7684;&#x7D22;&#x5F15;&#x5206;&#x8BCD;&#x5668;&#x5C06;&#x503C;&#x8F6C;&#x6362;&#x4E3A;&#x6807;&#x8BB0;&#x5E76;&#x5C06;&#x5176;&#x89C4;&#x8303;&#x5316;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6BCF;&#x4E2A;&#x6807;&#x8BB0;&#x8868;&#x793A;&#x5355;&#x8BCD;&#x7684;&#x6F5C;&#x5728;&#x524D;&#x7F00;&#xFF1A;</p>
+<pre class="language-"><code>[ a, ap, app, appl, apple]
+</code></pre><p>&#x7136;&#x540E;&#x8FD9;&#x4E9B;&#x6807;&#x8BB0;&#x88AB;&#x7D22;&#x5F15;&#x3002;</p>
+<p>&#x7A0D;&#x540E;&#xFF0C;&#x7528;&#x6237;&#x5C06;&#x5728;&#x540C;&#x4E00;<code>text</code>&#x5B57;&#x6BB5;&#x4E2D;&#x641C;&#x7D22;&#xFF1A;</p>
+<pre class="language-"><code>&quot;appli&quot;
+</code></pre><p>&#x7528;&#x6237;&#x5E0C;&#x671B;&#x6B64;&#x641C;&#x7D22;&#x53EA;&#x5339;&#x914D;&#x4EE5;<code>appli</code>&#x5F00;&#x5934;&#x7684;&#x5355;&#x8BCD;&#xFF0C;&#x4F8B;&#x5982;<code>appliance</code>&#x6216;<code>application</code>&#x3002;&#x641C;&#x7D22;&#x7ED3;&#x679C;&#x5E94;&#x8BE5;&#x4E0E;<code>apple</code>&#x4E0D;&#x5339;&#x914D;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7D22;&#x5F15;&#x5206;&#x8BCD;&#x5668;&#x5206;&#x6790;&#x6B64;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B83;&#x5C06;&#x751F;&#x6210;&#x4EE5;&#x4E0B;&#x6807;&#x8BB0;&#xFF1A;</p>
+<pre class="language-"><code>[ a, ap, app, appl, appli ]
+</code></pre><p>&#x5F53;Elasticsearch&#x5C06;&#x8FD9;&#x4E9B;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x6807;&#x8BB0;&#x4E0E;&#x4E3A;<code>apple</code>&#x7D22;&#x5F15;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6807;&#x8BB0;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x627E;&#x5230;&#x51E0;&#x4E2A;&#x5339;&#x914D;&#x9879;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6807;&#x8BB0;</th>
+<th>appli</th>
+<th>apple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a</code></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td><code>ap</code></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td><code>app</code></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td><code>appl</code></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td><code>appli</code></td>
+<td></td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+<p>&#x8FD9;&#x610F;&#x5473;&#x7740;&#x641C;&#x7D22;&#x7ED3;&#x679C;&#x4F1A;&#x9519;&#x8BEF;&#x5730;&#x5339;&#x914D;<code>apple</code>&#x3002;&#x4E0D;&#x4EC5;&#x5982;&#x6B64;&#xFF0C;&#x5B83;&#x8FD8;&#x53EF;&#x4EE5;&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x4EE5;<code>a</code>&#x5F00;&#x5934;&#x7684;&#x5355;&#x8BCD;&#x3002;</p>
+<p>&#x8981;&#x89E3;&#x51B3;&#x6B64;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;<code>text</code>&#x5B57;&#x6BB5;&#x4E0A;&#x4F7F;&#x7528;&#x7684;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x6307;&#x5B9A;&#x4E0D;&#x540C;&#x7684;&#x641C;&#x7D22;&#x5206;&#x8BCD;&#x5668;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x641C;&#x7D22;&#x5206;&#x8BCD;&#x5668;&#x6765;&#x751F;&#x6210;&#x5355;&#x4E2A;&#x6807;&#x8BB0;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x7EC4;&#x524D;&#x7F00;&#xFF1A;</p>
+<pre class="language-"><code>[ appli ]
+</code></pre><p>&#x6B64;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x6807;&#x8BB0;&#x5C06;&#x53EA;&#x5339;&#x914D;&#x4EE5;<code>appli</code>&#x5F00;&#x5934;&#x7684;&#x5355;&#x8BCD;&#x7684;&#x6807;&#x8BB0;&#xFF0C;&#x8FD9;&#x66F4;&#x597D;&#x5730;&#x7B26;&#x5408;&#x7528;&#x6237;&#x7684;&#x641C;&#x7D22;&#x671F;&#x671B;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="anatomyOfAnAnalyzer.html" class="navigation navigation-prev " aria-label="Previous page: 分词器详解">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="stemming.html" class="navigation navigation-next " aria-label="Next page: 词干分析">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"索引搜索分词","level":"1.13.4","depth":2,"next":{"title":"词干分析","level":"1.13.5","depth":2,"path":"chapter13_text_analysis/concepts/stemming.md","ref":"chapter13_text_analysis/concepts/stemming.md","articles":[]},"previous":{"title":"分词器详解","level":"1.13.3","depth":2,"path":"chapter13_text_analysis/concepts/anatomyOfAnAnalyzer.md","ref":"chapter13_text_analysis/concepts/anatomyOfAnAnalyzer.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters-small","prism","prism-themes","-highlight"],"pluginsConfig":{"expandable-chapters-small":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"json"}},"prism-themes":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter13_text_analysis/concepts/indexAndSearchAnalysis.md","mtime":"2020-11-12T04:05:47.891Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-17T02:47:46.456Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

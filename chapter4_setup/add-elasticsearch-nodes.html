@@ -98,19 +98,6 @@
                 <a href="../">
             
                     
-                    Introduction
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="../chapter1_elasticsearch-intro/">
-            
-                <a href="../chapter1_elasticsearch-intro/">
-            
-                    
                     什么是Elasticsearch
             
                 </a>
@@ -120,9 +107,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../chapter1_elasticsearch-intro/documents-indices.html">
+        <li class="chapter " data-level="1.1.1" data-path="../chapter1_what_is_elasticsearch/documents-indices.html">
             
-                <a href="../chapter1_elasticsearch-intro/documents-indices.html">
+                <a href="../chapter1_what_is_elasticsearch/documents-indices.html">
             
                     
                     存入数据：文档与索引
@@ -133,9 +120,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../chapter1_elasticsearch-intro/search-analyze.html">
+        <li class="chapter " data-level="1.1.2" data-path="../chapter1_what_is_elasticsearch/search-analyze.html">
             
-                <a href="../chapter1_elasticsearch-intro/search-analyze.html">
+                <a href="../chapter1_what_is_elasticsearch/search-analyze.html">
             
                     
                     取出信息：搜索与分析
@@ -146,9 +133,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../chapter1_elasticsearch-intro/scalability.html">
+        <li class="chapter " data-level="1.1.3" data-path="../chapter1_what_is_elasticsearch/scalability.html">
             
-                <a href="../chapter1_elasticsearch-intro/scalability.html">
+                <a href="../chapter1_what_is_elasticsearch/scalability.html">
             
                     
                     扩展性与弹性
@@ -164,9 +151,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../chapter2/">
+        <li class="chapter " data-level="1.2" data-path="../chapter2_what_is_new/">
             
-                <a href="../chapter2/">
+                <a href="../chapter2_what_is_new/">
             
                     
                     版本的新特性
@@ -177,9 +164,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../chapter3_getting-started/">
+        <li class="chapter " data-level="1.3" data-path="../chapter3_getting_started/">
             
-                <a href="../chapter3_getting-started/">
+                <a href="../chapter3_getting_started/">
             
                     
                     开始使用Elasticsearch
@@ -190,7 +177,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="./">
             
                 <a href="./">
             
@@ -204,12 +191,26 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="setting.md">
+        <li class="chapter " data-level="1.4.1" data-path="installing_elasticsearch/install-elasticsearch.html">
             
-                <span>
+                <a href="installing_elasticsearch/install-elasticsearch.html">
             
                     
-                    Installing Elasticsearch
+                    安装Elasticsearch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="installing_elasticsearch/docker.html">
+            
+                <a href="installing_elasticsearch/docker.html">
+            
+                    
+                    使用Docker安装Elasticsearch
             
                 </a>
             
@@ -217,7 +218,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="setting.md">
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="setting.md">
             
                 <span>
             
@@ -230,7 +236,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="important-settings.html">
+        <li class="chapter " data-level="1.4.3" data-path="important-settings.html">
             
                 <a href="important-settings.html">
             
@@ -241,14 +247,15 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="1.5.4" data-path="setting.md">
+        <li class="chapter " data-level="1.4.3.1" data-path="path-settings.html">
             
-                <span>
+                <a href="path-settings.html">
             
                     
-                    Important System Configuration
+                    path.data 和 path.logs
             
                 </a>
             
@@ -256,12 +263,64 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="setting.md">
+        <li class="chapter " data-level="1.4.3.2" >
             
                 <span>
             
                     
-                    Bootstrap Checks
+                    cluster.name
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" >
+            
+                <span>
+            
+                    
+                    node.name
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" >
+            
+                <span>
+            
+                    
+                    network.host
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" >
+            
+                <span>
+            
+                    
+                    发现与集群组成设置
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="heap_size.html">
+            
+                <a href="heap_size.html">
+            
+                    
+                    堆大小设置
             
                 </a>
             
@@ -269,7 +328,154 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6" data-path="setting.md">
+        <li class="chapter " data-level="1.4.3.7" >
+            
+                <span>
+            
+                    
+                    JVM 堆 dump 路径
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.8" >
+            
+                <span>
+            
+                    
+                    GC日志
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.9" >
+            
+                <span>
+            
+                    
+                    临时目录
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.10" >
+            
+                <span>
+            
+                    
+                    JVM 严重错误日志
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="important_system_configuration/system-config.html">
+            
+                <a href="important_system_configuration/system-config.html">
+            
+                    
+                    重要系统配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="important_system_configuration/setup-configuration-memory.html">
+            
+                <a href="important_system_configuration/setup-configuration-memory.html">
+            
+                    
+                    禁用内存交换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="important_system_configuration/vm-max-map-count.html">
+            
+                <a href="important_system_configuration/vm-max-map-count.html">
+            
+                    
+                    虚拟内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="important_system_configuration/max-number-of-threads.html">
+            
+                <a href="important_system_configuration/max-number-of-threads.html">
+            
+                    
+                    线程数量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="bootstrap-checks.html">
+            
+                <a href="bootstrap-checks.html">
+            
+                    
+                    引导式检查
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="heap_size_check.html">
+            
+                <a href="heap_size_check.html">
+            
+                    
+                    堆大小检查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="setting.md">
             
                 <span>
             
@@ -282,7 +488,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.7" data-path="setting.md">
+        <li class="chapter " data-level="1.4.7" data-path="setting.md">
             
                 <span>
             
@@ -295,7 +501,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.8" data-path="setting.md">
+        <li class="chapter " data-level="1.4.8" data-path="setting.md">
             
                 <span>
             
@@ -308,7 +514,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.9" data-path="setting.md">
+        <li class="chapter " data-level="1.4.9" data-path="setting.md">
             
                 <span>
             
@@ -321,7 +527,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.10" data-path="add-elasticsearch-nodes.html">
+        <li class="chapter active" data-level="1.4.10" data-path="add-elasticsearch-nodes.html">
             
                 <a href="add-elasticsearch-nodes.html">
             
@@ -334,7 +540,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.11" data-path="setting.md">
+        <li class="chapter " data-level="1.4.11" data-path="setting.md">
             
                 <span>
             
@@ -347,7 +553,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.12" data-path="setting.md">
+        <li class="chapter " data-level="1.4.12" data-path="setting.md">
             
                 <span>
             
@@ -360,7 +566,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.13" data-path="setting.md">
+        <li class="chapter " data-level="1.4.13" data-path="setting.md">
             
                 <span>
             
@@ -373,7 +579,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.14" data-path="setting.md">
+        <li class="chapter " data-level="1.4.14" data-path="setting.md">
             
                 <span>
             
@@ -386,7 +592,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.15" data-path="setting.md">
+        <li class="chapter " data-level="1.4.15" data-path="setting.md">
             
                 <span>
             
@@ -404,9 +610,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../chapter5_upgrade/">
+        <li class="chapter " data-level="1.5" data-path="../chapter5_upgrade/setup-upgrade.html">
             
-                <a href="../chapter5_upgrade/">
+                <a href="../chapter5_upgrade/setup-upgrade.html">
             
                     
                     升级Elasticsearch
@@ -415,68 +621,15 @@
             
 
             
-        </li>
-    
-        <li class="chapter " data-level="1.7" data-path="../chapter6_index_modules/">
-            
-                <a href="../chapter6_index_modules/">
-            
-                    
-                    索引模块
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8" data-path="../chapter7_mapping/">
-            
-                <a href="../chapter7_mapping/">
-            
-                    
-                    映射
-            
-                </a>
-            
-
-            
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../chapter7_mapping/dynamic-mapping.html">
+        <li class="chapter " data-level="1.5.1" data-path="../chapter5_upgrade/rolling-upgrades.html">
             
-                <a href="../chapter7_mapping/dynamic-mapping.html">
-            
-                    
-                    动态映射(Dynamic mapping)
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.8.1.1" data-path="../chapter8_text_analysis/concepts/anatomyOfAnAnalyzer.html">
-            
-                <a href="../chapter8_text_analysis/concepts/anatomyOfAnAnalyzer.html">
+                <a href="../chapter5_upgrade/rolling-upgrades.html">
             
                     
-                    分词器详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.1.2" data-path="../chapter8_text_analysis/concepts/indexAndSearchAnalysis.html">
-            
-                <a href="../chapter8_text_analysis/concepts/indexAndSearchAnalysis.html">
-            
-                    
-                    索引搜索分词
+                    滚动升级
             
                 </a>
             
@@ -489,344 +642,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../chapter7_mapping/explicit-mapping.html">
+        <li class="chapter " data-level="1.6" data-path="../chapter6_index_templates/">
             
-                <a href="../chapter7_mapping/explicit-mapping.html">
-            
-                    
-                    显式映射(Explicit mapping)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.3" data-path="../chapter7_mapping/explicit-mapping.html">
-            
-                <a href="../chapter7_mapping/explicit-mapping.html">
-            
-                    
-                    显式映射(Explicit mapping)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.4" data-path="../chapter7_mapping/explicit-mapping.html">
-            
-                <a href="../chapter7_mapping/explicit-mapping.html">
-            
-                    
-                    显式映射(Explicit mapping)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.5" data-path="../chapter7_mapping/explicit-mapping.html">
-            
-                <a href="../chapter7_mapping/explicit-mapping.html">
-            
-                    
-                    显式映射(Explicit mapping)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.6" data-path="../chapter7_mapping/explicit-mapping.html">
-            
-                <a href="../chapter7_mapping/explicit-mapping.html">
-            
-                    
-                    显式映射(Explicit mapping)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.7" data-path="../chapter7_mapping/mapping-settings-limit.html">
-            
-                <a href="../chapter7_mapping/mapping-settings-limit.html">
-            
-                    
-                    映射限制设置(Mapping limit settings)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.8" data-path="../chapter7_mapping/explicit-mapping.html">
-            
-                <a href="../chapter7_mapping/explicit-mapping.html">
-            
-                    
-                    显式映射(Explicit mapping)
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9" data-path="../chapter8_text_analysis/">
-            
-                <a href="../chapter8_text_analysis/">
-            
-                    
-                    文本分析
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.9.1" data-path="../chapter8_text_analysis/overview.html">
-            
-                <a href="../chapter8_text_analysis/overview.html">
-            
-                    
-                    概述
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.2" data-path="../chapter8_text_analysis/concepts.html">
-            
-                <a href="../chapter8_text_analysis/concepts.html">
-            
-                    
-                    概念
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.9.2.1" data-path="../chapter8_text_analysis/concepts/anatomyOfAnAnalyzer.html">
-            
-                <a href="../chapter8_text_analysis/concepts/anatomyOfAnAnalyzer.html">
-            
-                    
-                    分词器详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.2.2" data-path="../chapter8_text_analysis/concepts/indexAndSearchAnalysis.html">
-            
-                <a href="../chapter8_text_analysis/concepts/indexAndSearchAnalysis.html">
-            
-                    
-                    索引搜索分词
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.2.3" data-path="../chapter8_text_analysis/concepts/stemming.html">
-            
-                <a href="../chapter8_text_analysis/concepts/stemming.html">
-            
-                    
-                    词干分析
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.2.4" data-path="../chapter8_text_analysis/concepts/tokenGraphs.html">
-            
-                <a href="../chapter8_text_analysis/concepts/tokenGraphs.html">
-            
-                    
-                    标记图
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.3" data-path="../chapter8_text_analysis/configureTextAnalysis.html">
-            
-                <a href="../chapter8_text_analysis/configureTextAnalysis.html">
-            
-                    
-                    配置文本分析
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.9.3.1" data-path="../chapter8_text_analysis/configureTextAnalysis/testAnalyzer.html">
-            
-                <a href="../chapter8_text_analysis/configureTextAnalysis/testAnalyzer.html">
-            
-                    
-                    测试分词器
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.3.2" data-path="../chapter8_text_analysis/configureTextAnalysis/configureBuildInAnalyzer.html">
-            
-                <a href="../chapter8_text_analysis/configureTextAnalysis/configureBuildInAnalyzer.html">
-            
-                    
-                    配置内置分词器
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.3.3" data-path="../chapter8_text_analysis/configureTextAnalysis/createCustomAnalyzer.html">
-            
-                <a href="../chapter8_text_analysis/configureTextAnalysis/createCustomAnalyzer.html">
-            
-                    
-                    创建自定义分词器
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.3.4" data-path="../chapter8_text_analysis/concepts/specifyAnalyzer.html">
-            
-                <a href="../chapter8_text_analysis/concepts/specifyAnalyzer.html">
-            
-                    
-                    指定分词器
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.4" data-path="../chapter8_text_analysis/build-inAnalyzerReference.html">
-            
-                <a href="../chapter8_text_analysis/build-inAnalyzerReference.html">
-            
-                    
-                    内置分词器参考
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.5" data-path="../chapter8_text_analysis/tokenizerReference.html">
-            
-                <a href="../chapter8_text_analysis/tokenizerReference.html">
-            
-                    
-                    标记化器参考
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.6" data-path="../chapter8_text_analysis/tokenFilterReference.html">
-            
-                <a href="../chapter8_text_analysis/tokenFilterReference.html">
-            
-                    
-                    标记过滤器参考
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.7" data-path="../chapter8_text_analysis/characterFilterReference.html">
-            
-                <a href="../chapter8_text_analysis/characterFilterReference.html">
-            
-                    
-                    字符过滤器参考
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.8" data-path="../chapter8_text_analysis/normalizer.html">
-            
-                <a href="../chapter8_text_analysis/normalizer.html">
-            
-                    
-                    规范化器
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10" data-path="../chapter9_index_templates/">
-            
-                <a href="../chapter9_index_templates/">
+                <a href="../chapter6_index_templates/">
             
                     
                     索引模板
@@ -838,9 +656,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.10.1" data-path="../chapter9_index_templates/simulate-multi-component-templates.html">
+        <li class="chapter " data-level="1.6.1" data-path="../chapter6_index_templates/simulate-multi-component-templates.html">
             
-                <a href="../chapter9_index_templates/simulate-multi-component-templates.html">
+                <a href="../chapter6_index_templates/simulate-multi-component-templates.html">
             
                     
                     模拟多组件模板
@@ -856,35 +674,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="../chapter10_data_streams/">
+        <li class="chapter " data-level="1.7" data-path="../chapter7_search_your_data/">
             
-                <a href="../chapter10_data_streams/">
-            
-                    
-                    数据流
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.12" data-path="../chapter11_ingest_node/">
-            
-                <a href="../chapter11_ingest_node/">
-            
-                    
-                    预处理节点
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13" data-path="../chapter12_search_your_data/">
-            
-                <a href="../chapter12_search_your_data/">
+                <a href="../chapter7_search_your_data/">
             
                     
                     搜索数据
@@ -896,9 +688,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.13.1" data-path="../chapter12_search_your_data/collapse_search_results.html">
+        <li class="chapter " data-level="1.7.1" data-path="../chapter7_search_your_data/collapse_search_results.html">
             
-                <a href="../chapter12_search_your_data/collapse_search_results.html">
+                <a href="../chapter7_search_your_data/collapse_search_results.html">
             
                     
                     折叠搜索结果
@@ -909,9 +701,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13.2" data-path="../chapter12_search_your_data/filter_search_results.html">
+        <li class="chapter " data-level="1.7.2" data-path="../chapter7_search_your_data/filter_search_results.html">
             
-                <a href="../chapter12_search_your_data/filter_search_results.html">
+                <a href="../chapter7_search_your_data/filter_search_results.html">
             
                     
                     筛选搜索结果
@@ -922,9 +714,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13.3" data-path="../chapter12_search_your_data/highlighting.html">
+        <li class="chapter " data-level="1.7.3" data-path="../chapter7_search_your_data/highlighting.html">
             
-                <a href="../chapter12_search_your_data/highlighting.html">
+                <a href="../chapter7_search_your_data/highlighting.html">
             
                     
                     高亮显示
@@ -935,9 +727,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13.4" data-path="../chapter12_search_your_data/async-search-intro.md">
+        <li class="chapter " data-level="1.7.4" data-path="../chapter7_search_your_data/async-search-intro.html">
             
-                <span>
+                <a href="../chapter7_search_your_data/async-search-intro.html">
             
                     
                     长时间搜索(x-pack)
@@ -948,9 +740,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13.5" data-path="../chapter12_search_your_data/near-real-time.html">
+        <li class="chapter " data-level="1.7.5" data-path="../chapter7_search_your_data/near-real-time.html">
             
-                <a href="../chapter12_search_your_data/near-real-time.html">
+                <a href="../chapter7_search_your_data/near-real-time.html">
             
                     
                     准即时搜索
@@ -961,12 +753,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13.6" data-path="../chapter12_search_your_data/paginate-search-results.html">
+        <li class="chapter " data-level="1.7.6" data-path="../chapte7_search_your_data/paginate-search-results.md">
             
-                <a href="../chapter12_search_your_data/paginate-search-results.html">
+                <span>
             
                     
                     搜索结果分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../chapte7_search_your_data/sort-search-results.md">
+            
+                <span>
+            
+                    
+                    搜索结果排序
             
                 </a>
             
@@ -979,9 +784,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="../chapter13_query_dsl/">
+        <li class="chapter " data-level="1.8" data-path="../chapter8_query_dsl/">
             
-                <a href="../chapter13_query_dsl/">
+                <a href="../chapter8_query_dsl/">
             
                     
                     Query DSL
@@ -993,9 +798,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.14.1" data-path="../chapter13_query_dsl/query-filter-context.html">
+        <li class="chapter " data-level="1.8.1" data-path="../chapter8_query_dsl/query-filter-context.html">
             
-                <a href="../chapter13_query_dsl/query-filter-context.html">
+                <a href="../chapter8_query_dsl/query-filter-context.html">
             
                     
                     查询筛选上下文
@@ -1006,9 +811,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.2" data-path="../chapter13_query_dsl/compound-queries.html">
+        <li class="chapter " data-level="1.8.2" data-path="../chapter8_query_dsl/compound-queries.html">
             
-                <a href="../chapter13_query_dsl/compound-queries.html">
+                <a href="../chapter8_query_dsl/compound-queries.html">
             
                     
                     复合查询
@@ -1020,9 +825,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.14.2.1" data-path="../chapter13_query_dsl/query-dsl-bool-query.html">
+        <li class="chapter " data-level="1.8.2.1" data-path="../chapter8_query_dsl/query-dsl-bool-query.html">
             
-                <a href="../chapter13_query_dsl/query-dsl-bool-query.html">
+                <a href="../chapter8_query_dsl/query-dsl-bool-query.html">
             
                     
                     布尔查询
@@ -1033,9 +838,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.2.2" data-path="../chapter13_query_dsl/query-dsl-boosting-query.html">
+        <li class="chapter " data-level="1.8.2.2" data-path="../chapter8_query_dsl/query-dsl-boosting-query.html">
             
-                <a href="../chapter13_query_dsl/query-dsl-boosting-query.html">
+                <a href="../chapter8_query_dsl/query-dsl-boosting-query.html">
             
                     
                     增强查询
@@ -1046,9 +851,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.2.3" data-path="../chapter13_query_dsl/query-dsl-constant-score-query.html">
+        <li class="chapter " data-level="1.8.2.3" data-path="../chapter8_query_dsl/query-dsl-constant-score-query.html">
             
-                <a href="../chapter13_query_dsl/query-dsl-constant-score-query.html">
+                <a href="../chapter8_query_dsl/query-dsl-constant-score-query.html">
             
                     
                     词干分析
@@ -1059,9 +864,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.2.4" data-path="../chapter13_query_dsl/query-dsl-dis-max-query.html">
+        <li class="chapter " data-level="1.8.2.4" data-path="../chapter8_query_dsl/query-dsl-dis-max-query.html">
             
-                <a href="../chapter13_query_dsl/query-dsl-dis-max-query.html">
+                <a href="../chapter8_query_dsl/query-dsl-dis-max-query.html">
             
                     
                     标记图
@@ -1072,9 +877,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.2.5" data-path="../chapter13_query_dsl/query-dsl-function-score-query.html">
+        <li class="chapter " data-level="1.8.2.5" data-path="../chapter8_query_dsl/query-dsl-function-score-query.html">
             
-                <a href="../chapter13_query_dsl/query-dsl-function-score-query.html">
+                <a href="../chapter8_query_dsl/query-dsl-function-score-query.html">
             
                     
                     标记图
@@ -1090,9 +895,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.3" data-path="../chapter13_query_dsl/full-text-queries.html">
+        <li class="chapter " data-level="1.8.3" data-path="../chapter8_query_dsl/full-text-queries/full-text-queries.html">
             
-                <a href="../chapter13_query_dsl/full-text-queries.html">
+                <a href="../chapter8_query_dsl/full-text-queries/full-text-queries.html">
             
                     
                     全文本查询
@@ -1104,12 +909,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.14.3.1" data-path="../chapter13_query_dsl/query-dsl-intervals-query.html">
+        <li class="chapter " data-level="1.8.3.1" data-path="../chapter8_query_dsl/full-text-queries/query-dsl-intervals-query.html">
             
-                <a href="../chapter13_query_dsl/query-dsl-intervals-query.html">
+                <a href="../chapter8_query_dsl/full-text-queries/query-dsl-intervals-query.html">
             
                     
-                    间隔
+                    区间
             
                 </a>
             
@@ -1117,9 +922,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.3.2" data-path="../chapter13_query_dsl/query-dsl-match-query.html">
+        <li class="chapter " data-level="1.8.3.2" data-path="../chapter8_query_dsl/full-text-queries/query-dsl-match-query.html">
             
-                <a href="../chapter13_query_dsl/query-dsl-match-query.html">
+                <a href="../chapter8_query_dsl/full-text-queries/query-dsl-match-query.html">
             
                     
                     匹配
@@ -1130,9 +935,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.3.3" data-path="../chapter13_query_dsl/query-dsl-match-bool-prefix-query.html">
+        <li class="chapter " data-level="1.8.3.3" data-path="../chapter8_query_dsl/full-text-queries/query-dsl-match-bool-prefix-query.html">
             
-                <a href="../chapter13_query_dsl/query-dsl-match-bool-prefix-query.html">
+                <a href="../chapter8_query_dsl/full-text-queries/query-dsl-match-bool-prefix-query.html">
             
                     
                     匹配布尔前缀
@@ -1143,9 +948,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.3.4" data-path="../chapter13_query_dsl/query-dsl-match-query-phrase.html">
+        <li class="chapter " data-level="1.8.3.4" data-path="../chapter8_query_dsl/full-text-queries/query-dsl-match-query-phrase.html">
             
-                <a href="../chapter13_query_dsl/query-dsl-match-query-phrase.html">
+                <a href="../chapter8_query_dsl/full-text-queries/query-dsl-match-query-phrase.html">
             
                     
                     匹配词组
@@ -1156,12 +961,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.3.5" data-path="../chapter13_query_dsl/query-dsl-function-score-query.html">
+        <li class="chapter " data-level="1.8.3.5" data-path="../chapter8_query_dsl/full-text-queries/query-dsl-query-string-query.html">
             
-                <a href="../chapter13_query_dsl/query-dsl-function-score-query.html">
+                <a href="../chapter8_query_dsl/full-text-queries/query-dsl-query-string-query.html">
             
                     
-                    标记图
+                    查询字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.6" data-path="../chapter8_query_dsl/full-text-queries/query-dsl-simple-query-string-query.html">
+            
+                <a href="../chapter8_query_dsl/full-text-queries/query-dsl-simple-query-string-query.html">
+            
+                    
+                    简单查询字符串
             
                 </a>
             
@@ -1174,9 +992,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.4" data-path="../chapter13_query_dsl/geo-queries.html">
+        <li class="chapter " data-level="1.8.4" data-path="../chapter8_query_dsl/geo-queries.html">
             
-                <a href="../chapter13_query_dsl/geo-queries.html">
+                <a href="../chapter8_query_dsl/geo-queries.html">
             
                     
                     地理查询
@@ -1187,7 +1005,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.5" data-path="../chapter13_query_dsl/shape-queries.md">
+        <li class="chapter " data-level="1.8.5" data-path="../chapter8_query_dsl/shape-queries.md">
             
                 <span>
             
@@ -1200,7 +1018,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.6" data-path="../chapter13_query_dsl/joining-queries.md">
+        <li class="chapter " data-level="1.8.6" data-path="../chapter8_query_dsl/joining-queries.md">
             
                 <span>
             
@@ -1213,7 +1031,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.7" data-path="../chapter13_query_dsl/query-dsl-match-all-query.md">
+        <li class="chapter " data-level="1.8.7" data-path="../chapter8_query_dsl/query-dsl-match-all-query.md">
             
                 <span>
             
@@ -1226,7 +1044,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.8" data-path="../chapter13_query_dsl/span-queries.md">
+        <li class="chapter " data-level="1.8.8" data-path="../chapter8_query_dsl/span-queries.md">
             
                 <span>
             
@@ -1239,9 +1057,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.9" data-path="../chapter13_query_dsl/specialized-queries.html">
+        <li class="chapter " data-level="1.8.9" data-path="../chapter8_query_dsl/specialized-queries.html">
             
-                <a href="../chapter13_query_dsl/specialized-queries.html">
+                <a href="../chapter8_query_dsl/specialized-queries.html">
             
                     
                     特定查询
@@ -1253,9 +1071,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.14.9.1" data-path="../chapter13_query_dsl/specialized-queries.html">
+        <li class="chapter " data-level="1.8.9.1" data-path="../chapter8_query_dsl/specialized-queries.html">
             
-                <a href="../chapter13_query_dsl/specialized-queries.html">
+                <a href="../chapter8_query_dsl/specialized-queries.html">
             
                     
                     Distance feature
@@ -1266,9 +1084,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.9.2" data-path="../chapter13_query_dsl/specialized-queries.html">
+        <li class="chapter " data-level="1.8.9.2" data-path="../chapter8_query_dsl/specialized-queries.html">
             
-                <a href="../chapter13_query_dsl/specialized-queries.html">
+                <a href="../chapter8_query_dsl/specialized-queries.html">
             
                     
                     More like this
@@ -1279,9 +1097,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.9.3" data-path="../chapter13_query_dsl/specialized-queries.html">
+        <li class="chapter " data-level="1.8.9.3" data-path="../chapter8_query_dsl/specialized-queries.html">
             
-                <a href="../chapter13_query_dsl/specialized-queries.html">
+                <a href="../chapter8_query_dsl/specialized-queries.html">
             
                     
                     Percolate
@@ -1292,9 +1110,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.9.4" data-path="../chapter13_query_dsl/specialized-queries.html">
+        <li class="chapter " data-level="1.8.9.4" data-path="../chapter8_query_dsl/specialized-queries.html">
             
-                <a href="../chapter13_query_dsl/specialized-queries.html">
+                <a href="../chapter8_query_dsl/specialized-queries.html">
             
                     
                     Rank feature
@@ -1305,9 +1123,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.9.5" data-path="../chapter13_query_dsl/specialized-queries.html">
+        <li class="chapter " data-level="1.8.9.5" data-path="../chapter8_query_dsl/specialized-queries.html">
             
-                <a href="../chapter13_query_dsl/specialized-queries.html">
+                <a href="../chapter8_query_dsl/specialized-queries.html">
             
                     
                     Script
@@ -1318,9 +1136,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.9.6" data-path="../chapter13_query_dsl/specialized-queries.html">
+        <li class="chapter " data-level="1.8.9.6" data-path="../chapter8_query_dsl/specialized-queries.html">
             
-                <a href="../chapter13_query_dsl/specialized-queries.html">
+                <a href="../chapter8_query_dsl/specialized-queries.html">
             
                     
                     Script score
@@ -1331,9 +1149,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.9.7" data-path="../chapter13_query_dsl/specialized-queries.html">
+        <li class="chapter " data-level="1.8.9.7" data-path="../chapter8_query_dsl/specialized-queries.html">
             
-                <a href="../chapter13_query_dsl/specialized-queries.html">
+                <a href="../chapter8_query_dsl/specialized-queries.html">
             
                     
                     Wrapper
@@ -1344,9 +1162,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.9.8" data-path="../chapter13_query_dsl/specialized-queries.html">
+        <li class="chapter " data-level="1.8.9.8" data-path="../chapter8_query_dsl/specialized-queries.html">
             
-                <a href="../chapter13_query_dsl/specialized-queries.html">
+                <a href="../chapter8_query_dsl/specialized-queries.html">
             
                     
                     Pinned Query
@@ -1362,12 +1180,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.10" data-path="../chapter13_query_dsl/term-level-queries.md">
+        <li class="chapter " data-level="1.8.10" data-path="../chapter8_query_dsl/term-level-queries.md">
             
                 <span>
             
                     
-                    术语级别查询
+                    词项级别查询
             
                 </a>
             
@@ -1375,12 +1193,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.11" data-path="../chapter13_query_dsl/query-dsl-minimum-should-match.md">
+        <li class="chapter " data-level="1.8.11" data-path="../chapter8_query_dsl/query-dsl-minimum-should-match.md">
             
                 <span>
             
                     
-                    最小匹配查询
+                    minimum_should_match参数
             
                 </a>
             
@@ -1388,12 +1206,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.12" data-path="../chapter13_query_dsl/query-dsl-multi-term-rewrite.md">
+        <li class="chapter " data-level="1.8.12" data-path="../chapter8_query_dsl/query-dsl-multi-term-rewrite.md">
             
                 <span>
             
                     
-                    多术语重写查询
+                    rewrite参数
             
                 </a>
             
@@ -1401,7 +1219,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.13" data-path="../chapter13_query_dsl/regexp-syntax.md">
+        <li class="chapter " data-level="1.8.13" data-path="../chapter8_query_dsl/regexp-syntax.md">
             
                 <span>
             
@@ -1419,33 +1237,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="../chapter14_aggregations/">
-            
-                <a href="../chapter14_aggregations/">
-            
-                    
-                    聚合
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.16" data-path="../chapter15_EQL/README.md">
-            
-                <span>
-            
-                    
-                    EQL
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.17" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.9" data-path="../chapter9_SQL_access/README.md">
             
                 <span>
             
@@ -1458,7 +1250,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.18" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.10" data-path="../chapter10_aggregations/">
+            
+                <a href="../chapter10_aggregations/">
+            
+                    
+                    聚合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter11_scripting/README.md">
             
                 <span>
             
@@ -1471,7 +1276,324 @@
             
         </li>
     
-        <li class="chapter " data-level="1.19" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.12" data-path="../chapter12_mapping/">
+            
+                <a href="../chapter12_mapping/">
+            
+                    
+                    映射
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter12_mapping/dynamic-mapping.html">
+            
+                <a href="../chapter12_mapping/dynamic-mapping.html">
+            
+                    
+                    动态映射(Dynamic mapping)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../chapter12_mapping/mapping_parameters/">
+            
+                <a href="../chapter12_mapping/mapping_parameters/">
+            
+                    
+                    映射参数(Mapping parameter)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.2.1" data-path="../chapter12_mapping/mapping_parameters/ignore-above.html">
+            
+                <a href="../chapter12_mapping/mapping_parameters/ignore-above.html">
+            
+                    
+                    ignore_above
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../chapter13_text_analysis/">
+            
+                <a href="../chapter13_text_analysis/">
+            
+                    
+                    文本分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../chapter13_text_analysis/overview.html">
+            
+                <a href="../chapter13_text_analysis/overview.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../chapter13_text_analysis/concepts.html">
+            
+                <a href="../chapter13_text_analysis/concepts.html">
+            
+                    
+                    概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../chapter13_text_analysis/concepts/anatomyOfAnAnalyzer.html">
+            
+                <a href="../chapter13_text_analysis/concepts/anatomyOfAnAnalyzer.html">
+            
+                    
+                    分词器详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../chapter13_text_analysis/concepts/indexAndSearchAnalysis.html">
+            
+                <a href="../chapter13_text_analysis/concepts/indexAndSearchAnalysis.html">
+            
+                    
+                    索引搜索分词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../chapter13_text_analysis/concepts/stemming.html">
+            
+                <a href="../chapter13_text_analysis/concepts/stemming.html">
+            
+                    
+                    词干分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../chapter13_text_analysis/concepts/tokenGraphs.html">
+            
+                <a href="../chapter13_text_analysis/concepts/tokenGraphs.html">
+            
+                    
+                    标记图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../chapter13_text_analysis/configureTextAnalysis.html">
+            
+                <a href="../chapter13_text_analysis/configureTextAnalysis.html">
+            
+                    
+                    配置文本分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../chapter13_text_analysis/configureTextAnalysis/testAnalyzer.html">
+            
+                <a href="../chapter13_text_analysis/configureTextAnalysis/testAnalyzer.html">
+            
+                    
+                    测试分词器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../chapter13_text_analysis/configureTextAnalysis/configureBuildInAnalyzer.html">
+            
+                <a href="../chapter13_text_analysis/configureTextAnalysis/configureBuildInAnalyzer.html">
+            
+                    
+                    配置内置分词器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.10" data-path="../chapter13_text_analysis/configureTextAnalysis/createCustomAnalyzer.html">
+            
+                <a href="../chapter13_text_analysis/configureTextAnalysis/createCustomAnalyzer.html">
+            
+                    
+                    创建自定义分词器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.11" data-path="../chapter13_text_analysis/concepts/specifyAnalyzer.html">
+            
+                <a href="../chapter13_text_analysis/concepts/specifyAnalyzer.html">
+            
+                    
+                    指定分词器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.12" data-path="../chapter13_text_analysis/build-inAnalyzerReference.html">
+            
+                <a href="../chapter13_text_analysis/build-inAnalyzerReference.html">
+            
+                    
+                    内置分词器参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.13" data-path="../chapter13_text_analysis/tokenizerReference.html">
+            
+                <a href="../chapter13_text_analysis/tokenizerReference.html">
+            
+                    
+                    标记化器参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.14" data-path="../chapter13_text_analysis/token_filter_reference/analysis-tokenfilters.html">
+            
+                <a href="../chapter13_text_analysis/token_filter_reference/analysis-tokenfilters.html">
+            
+                    
+                    标记过滤器参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.15" data-path="../chapter13_text_analysis/characterFilterReference.html">
+            
+                <a href="../chapter13_text_analysis/characterFilterReference.html">
+            
+                    
+                    字符过滤器参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.16" data-path="../chapter13_text_analysis/normalizer.html">
+            
+                <a href="../chapter13_text_analysis/normalizer.html">
+            
+                    
+                    规范化器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../chapter14_index_modules/">
+            
+                <a href="../chapter14_index_modules/">
+            
+                    
+                    索引模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../chapter15_ingest_node/">
+            
+                <a href="../chapter15_ingest_node/">
+            
+                    
+                    预处理节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../chapter15_EQL/README.md">
             
                 <span>
             
@@ -1484,7 +1606,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.17" data-path="../chapter15_EQL/README.md">
             
                 <span>
             
@@ -1497,7 +1619,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.21" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.18" data-path="../chapter15_EQL/README.md">
             
                 <span>
             
@@ -1510,7 +1632,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.22" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.19" data-path="../chapter15_EQL/README.md">
             
                 <span>
             
@@ -1523,7 +1645,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.23" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.20" data-path="../chapter15_EQL/README.md">
             
                 <span>
             
@@ -1536,7 +1658,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.24" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.21" data-path="../chapter15_EQL/README.md">
             
                 <span>
             
@@ -1549,7 +1671,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.25" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.22" data-path="../chapter15_EQL/README.md">
             
                 <span>
             
@@ -1562,7 +1684,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.26" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.23" data-path="../chapter15_EQL/README.md">
             
                 <span>
             
@@ -1575,9 +1697,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.27" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.24" data-path="../chapter22_secure_a_cluster/">
             
-                <span>
+                <a href="../chapter22_secure_a_cluster/">
             
                     
                     集群安全
@@ -1586,9 +1708,105 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../chapter22_secure_a_cluster/elasticsearch-security.html">
+            
+                <a href="../chapter22_secure_a_cluster/elasticsearch-security.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
         </li>
     
-        <li class="chapter " data-level="1.28" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.24.2" data-path="../chapter22_secure_a_cluster/elasticsearch-security.html">
+            
+                <a href="../chapter22_secure_a_cluster/elasticsearch-security.html">
+            
+                    
+                    配置安全特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.3" data-path="../chapter22_secure_a_cluster/user_authentication/setting-up-authentication.html">
+            
+                <a href="../chapter22_secure_a_cluster/user_authentication/setting-up-authentication.html">
+            
+                    
+                    用户鉴权
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.3.1" data-path="../chapter22_secure_a_cluster/user_authentication/built-in-users.html">
+            
+                <a href="../chapter22_secure_a_cluster/user_authentication/built-in-users.html">
+            
+                    
+                    内置用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.4" data-path="../chapter22_secure_a_cluster/encrypting_communications/encrypting-communications.html">
+            
+                <a href="../chapter22_secure_a_cluster/encrypting_communications/encrypting-communications.html">
+            
+                    
+                    加密通信
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.4.1" data-path="../chapter22_secure_a_cluster/encrypting_communications/ssl-tls.html">
+            
+                <a href="../chapter22_secure_a_cluster/encrypting_communications/ssl-tls.html">
+            
+                    
+                    在群集上设置TLS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../chapter23_EQL/README.md">
             
                 <span>
             
@@ -1601,7 +1819,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.29" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.26" data-path="../chapter24_EQL/README.md">
             
                 <span>
             
@@ -1614,9 +1832,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.30" data-path="../chapter29_how_to/">
+        <li class="chapter " data-level="1.27" data-path="../chapter25_how_to/">
             
-                <a href="../chapter29_how_to/">
+                <a href="../chapter25_how_to/">
             
                     
                     如何
@@ -1628,9 +1846,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.30.1" data-path="../chapter29_how_to/general-recommendations.html">
+        <li class="chapter " data-level="1.27.1" data-path="../chapter29_how_to/general-recommendations.md">
             
-                <a href="../chapter29_how_to/general-recommendations.html">
+                <span>
             
                     
                     通用建议
@@ -1641,9 +1859,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.30.2" data-path="../chapter29_how_to/recipes.html">
+        <li class="chapter " data-level="1.27.2" data-path="../chapter29_how_to/recipes.md">
             
-                <a href="../chapter29_how_to/recipes.html">
+                <span>
             
                     
                     食谱
@@ -1655,9 +1873,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.30.2.1" data-path="../chapter29_how_to/mixing-exact-search-with-stemming.html">
+        <li class="chapter " data-level="1.27.2.1" data-path="../chapter29_how_to/mixing-exact-search-with-stemming.md">
             
-                <a href="../chapter29_how_to/mixing-exact-search-with-stemming.html">
+                <span>
             
                     
                     混合精确搜索和词干分析
@@ -1668,9 +1886,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.30.2.2" data-path="../chapter29_how_to/consistent-scoring.html">
+        <li class="chapter " data-level="1.27.2.2" data-path="../chapter29_how_to/consistent-scoring.md">
             
-                <a href="../chapter29_how_to/consistent-scoring.html">
+                <span>
             
                     
                     获得一致的分数
@@ -1681,9 +1899,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.30.2.3" data-path="../chapter29_how_to/static-scoring-signals.html">
+        <li class="chapter " data-level="1.27.2.3" data-path="../chapter29_how_to/static-scoring-signals.md">
             
-                <a href="../chapter29_how_to/static-scoring-signals.html">
+                <span>
             
                     
                     将静态相关信号纳入分数
@@ -1699,17 +1917,12 @@
             
         </li>
     
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.31" data-path="../REST-APIs/README.md">
+        <li class="chapter " data-level="1.27.3" data-path="../chapter29_how_to/tune_for_search_speed/README.md">
             
                 <span>
             
                     
-                    词语表
+                    调整搜索速度
             
                 </a>
             
@@ -1717,9 +1930,27 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32" data-path="../chapter30_REST-APIs/">
+
+            </ul>
             
-                <a href="../chapter30_REST-APIs/">
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="../chapter26_glossary/">
+            
+                <a href="../chapter26_glossary/">
+            
+                    
+                    术语表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="../chapter27_REST-APIs/">
+            
+                <a href="../chapter27_REST-APIs/">
             
                     
                     REST APIs
@@ -1731,7 +1962,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.32.1" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.1" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -1744,7 +1975,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.2" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.2" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -1757,7 +1988,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.3" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.3" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -1770,7 +2001,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.4" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.4" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -1783,7 +2014,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.5" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.5" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -1796,7 +2027,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.6" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.6" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -1809,9 +2040,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.7" data-path="../chapter30_REST-APIs/docs.html">
+        <li class="chapter " data-level="1.29.7" data-path="../chapter27_REST-APIs/document_apis/docs.html">
             
-                <a href="../chapter30_REST-APIs/docs.html">
+                <a href="../chapter27_REST-APIs/document_apis/docs.html">
             
                     
                     Document APIs
@@ -1823,9 +2054,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.32.7.1" data-path="../chapter30_REST-APIs/docs.html">
+        <li class="chapter " data-level="1.29.7.1" data-path="../chapter27_REST-APIs/document_apis/docs-replication.html">
             
-                <a href="../chapter30_REST-APIs/docs.html">
+                <a href="../chapter27_REST-APIs/document_apis/docs-replication.html">
             
                     
                     Reading and Writing documents
@@ -1836,9 +2067,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.7.2" data-path="../chapter30_REST-APIs/docs.html">
+        <li class="chapter " data-level="1.29.7.2" data-path="../chapter27_REST-APIs/document_apis/docs-index.html">
             
-                <a href="../chapter30_REST-APIs/docs.html">
+                <a href="../chapter27_REST-APIs/document_apis/docs-index.html">
             
                     
                     Index
@@ -1849,22 +2080,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.7.3" data-path="../chapter30_REST-APIs/docs.html">
+        <li class="chapter " data-level="1.29.7.3" data-path="../chapter27_REST-APIs/document_apis/docs-delete.html">
             
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Get
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.7.4" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
+                <a href="../chapter27_REST-APIs/document_apis/docs-delete.html">
             
                     
                     Delete
@@ -1875,35 +2093,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.7.5" data-path="../chapter30_REST-APIs/docs.html">
+        <li class="chapter " data-level="1.29.7.4" data-path="../chapter27_REST-APIs/document_apis/docs-update-by-query.html">
             
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Delete by query
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.7.6" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Update
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.7.7" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
+                <a href="../chapter27_REST-APIs/document_apis/docs-update-by-query.html">
             
                     
                     Update by query
@@ -1914,90 +2106,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.7.8" data-path="../chapter30_REST-APIs/docs.html">
+        <li class="chapter " data-level="1.29.7.5" data-path="../chapter27_REST-APIs/document_apis/docs-reindex.html">
             
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Multi get
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.7.9" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
+                <a href="../chapter27_REST-APIs/document_apis/docs-reindex.html">
             
                     
-                    Bulk
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.7.10" data-path="../chapter30_REST-APIs/docs-reindex.html">
-            
-                <a href="../chapter30_REST-APIs/docs-reindex.html">
-            
-                    
-                    Reindex(中文)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.7.11" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Term vectors
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.7.12" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Multi term vectors
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.7.13" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    ?refresh
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.7.14" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Optimistic concurrency control
+                    Reindex
             
                 </a>
             
@@ -2010,7 +2124,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.8" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.8" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2023,7 +2137,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.9" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.9" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2036,7 +2150,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.10" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.10" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2049,9 +2163,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.11" data-path="../chapter30_REST-APIs/indices.html">
+        <li class="chapter " data-level="1.29.11" data-path="../chapter27_REST-APIs/index_apis/indices.html">
             
-                <a href="../chapter30_REST-APIs/indices.html">
+                <a href="../chapter27_REST-APIs/index_apis/indices.html">
             
                     
                     Index APIs
@@ -2063,12 +2177,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.32.11.1" data-path="../chapter30_REST-APIs/docs.html">
+        <li class="chapter " data-level="1.29.11.1" data-path="../chapter27_REST-APIs/index_apis/indices-put-template.html">
             
-                <a href="../chapter30_REST-APIs/docs.html">
+                <a href="../chapter27_REST-APIs/index_apis/indices-put-template.html">
             
                     
-                    Add index alias
+                    Put index template
             
                 </a>
             
@@ -2076,623 +2190,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.11.2" data-path="../chapter30_REST-APIs/docs.html">
+        <li class="chapter " data-level="1.29.11.2" data-path="../chapter27_REST-APIs/index_apis/indices-put-mapping.html">
             
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Analyze
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.3" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
+                <a href="../chapter27_REST-APIs/index_apis/indices-put-mapping.html">
             
                     
-                    Clear cache
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.4" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Clone index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.5" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Close index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.6" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Create index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.7" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Delete index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.8" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Delete index alias
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.9" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Delete component template
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.10" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Delete index template
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.11" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Delete index template (legacy)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.12" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Flush
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.13" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Force merge
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.14" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Freeze index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.15" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Get component template
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.16" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Get field mapping
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.17" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Get index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.18" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Get index alias
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.19" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Get index settings
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.20" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Get index template
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.21" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Get index template (legacy)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.22" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Get mapping
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.23" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Index alias exists
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.24" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Index exists
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.25" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Index recovery
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.26" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Index segments
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.27" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Index shard stores
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.28" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Index stats
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.29" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Index template exists (legacy)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.30" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Open index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.31" data-path="../chapter30_REST-APIs/indices-put-template.html">
-            
-                <a href="../chapter30_REST-APIs/indices-put-template.html">
-            
-                    
-                    Put index template(中文)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.32" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Put index template (legacy)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.33" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Put component template
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.34" data-path="../chapter30_REST-APIs/indices-put-mapping.html">
-            
-                <a href="../chapter30_REST-APIs/indices-put-mapping.html">
-            
-                    
-                    Put mapping(中文)
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.35" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Refresh
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.36" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Rollover index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.37" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Shrink index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.38" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Simulate index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.39" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Simulate template
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.40" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Split index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.41" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Synced flush
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.42" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Type exists
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.43" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Unfreeze index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.44" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Update index alias
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.45" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Update index settings
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.46" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Resolve index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.47" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    List dangling indices
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.48" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Import dangling index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.32.11.49" data-path="../chapter30_REST-APIs/docs.html">
-            
-                <a href="../chapter30_REST-APIs/docs.html">
-            
-                    
-                    Delete dangling index
+                    Put mapping
             
                 </a>
             
@@ -2705,7 +2208,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.12" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.12" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2718,7 +2221,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.13" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.13" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2731,7 +2234,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.14" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.14" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2744,7 +2247,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.15" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.15" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2757,7 +2260,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.16" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.16" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2770,7 +2273,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.17" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.17" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2783,7 +2286,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.18" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.18" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2796,7 +2299,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.19" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.19" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2809,7 +2312,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.20" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.20" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2822,7 +2325,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.21" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.21" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2835,7 +2338,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.22" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.22" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2848,7 +2351,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.23" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.23" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2861,7 +2364,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.24" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.24" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2874,7 +2377,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.25" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.25" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2887,9 +2390,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.26" data-path="../chapter30_REST-APIs/snapshot-restore-apis.html">
+        <li class="chapter " data-level="1.29.26" data-path="../chapter27_REST-APIs/snapshot-restore-apis.html">
             
-                <a href="../chapter30_REST-APIs/snapshot-restore-apis.html">
+                <a href="../chapter27_REST-APIs/snapshot-restore-apis.html">
             
                     
                     Snapshot and restore APIs(中文)
@@ -2900,7 +2403,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.27" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.27" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2913,7 +2416,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.28" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.28" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2926,7 +2429,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.29" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.29" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2939,7 +2442,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.32.30" data-path="../chapter30_REST-APIs/api.md">
+        <li class="chapter " data-level="1.29.30" data-path="../chapter27_REST-APIs/api.md">
             
                 <span>
             
@@ -2957,7 +2460,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.33" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.30" data-path="../chapter15_EQL/README.md">
             
                 <span>
             
@@ -2970,7 +2473,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.34" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.31" data-path="../chapter15_EQL/README.md">
             
                 <span>
             
@@ -2983,7 +2486,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.35" data-path="../chapter15_EQL/README.md">
+        <li class="chapter " data-level="1.32" data-path="../chapter15_EQL/README.md">
             
                 <span>
             
@@ -3138,7 +2641,7 @@ DELETE /_cluster/voting_config_exclusions?wait_for_removal=<span class="token bo
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"在集群中添加或移除节点","level":"1.5.10","depth":2,"next":{"title":"Full-cluster restart and rolling restart","level":"1.5.11","depth":2,"path":"chapter4_setup/setting.md","ref":"chapter4_setup/setting.md","articles":[]},"previous":{"title":"Discovery and cluster formation","level":"1.5.9","depth":2,"path":"chapter4_setup/setting.md","ref":"chapter4_setup/setting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters-small","prism","prism-themes","-highlight"],"pluginsConfig":{"expandable-chapters-small":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"json"}},"prism-themes":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4_setup/add-elasticsearch-nodes.md","mtime":"2021-02-25T11:48:40.051Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-21T03:37:40.405Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"在集群中添加或移除节点","level":"1.4.10","depth":2,"next":{"title":"Full-cluster restart and rolling restart","level":"1.4.11","depth":2,"path":"chapter4_setup/setting.md","ref":"chapter4_setup/setting.md","articles":[]},"previous":{"title":"Discovery and cluster formation","level":"1.4.9","depth":2,"path":"chapter4_setup/setting.md","ref":"chapter4_setup/setting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters-small","prism","prism-themes","-highlight"],"pluginsConfig":{"expandable-chapters-small":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"json"}},"prism-themes":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4_setup/add-elasticsearch-nodes.md","mtime":"2021-02-25T11:48:40.051Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-17T02:47:46.456Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
